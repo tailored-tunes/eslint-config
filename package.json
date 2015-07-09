@@ -1,0 +1,27 @@
+{
+  "name": "eslint-config",
+  "version": "1.0.0",
+  "description": "Eslint configuration files for the Tailored Tunes universe",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tailored-tunes/eslint-config.git"
+  },
+  "keywords": [
+    "eslint",
+    "tailored-tunes"
+  ],
+  "author": "meza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tailored-tunes/eslint-config/issues"
+  },
+  "homepage": "https://github.com/tailored-tunes/eslint-config#readme"
+  "files": [
+    ".eslintrc",
+    ".eslintrc-test"
+  ],
+  "peerDependencies": {
+    "eslint": "^0.24.0"
+  }
+}
