@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/tailored-tunes/eslint-config/issues"
   },
-  "homepage": "https://github.com/tailored-tunes/eslint-config#readme"
+  "homepage": "https://github.com/tailored-tunes/eslint-config#readme",
   "files": [
     ".eslintrc",
     ".eslintrc-test"
