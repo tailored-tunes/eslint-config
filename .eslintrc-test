@@ -1,8 +1,0 @@
-{
-  "extends": "./.eslintrc",
-  "globals": {
-    "describe": false,
-    "beforeEach": false,
-    "it": false
-  }
-}
