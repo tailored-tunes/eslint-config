@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-tailored-tunes",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Eslint configuration files for the Tailored Tunes universe",
   "main": "index.js",
   "repository": {
@@ -8,8 +8,8 @@
     "url": "git+https://github.com/tailored-tunes/eslint-config.git"
   },
   "scripts": {
-    "postinstall": "./node_modules/.bin/nsp check && ./node_modules/.bin/npm-check-updates",
-		"test": "grunt"
+    "check-updates": "./node_modules/.bin/nsp check && ./node_modules/.bin/npm-check-updates",
+		"lint": "grunt"
   },
   "keywords": [
     "eslint",
