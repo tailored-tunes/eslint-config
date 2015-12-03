@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-tailored-tunes",
-  "version": "1.0.2.1",
+  "version": "1.0.3",
   "description": "Eslint configuration files for the Tailored Tunes universe",
   "main": "index.js",
   "repository": {
