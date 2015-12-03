@@ -2,7 +2,7 @@
 
 module.exports = {
 	extends: [
-		'eslint-config-tailored-tunes/base'
+		'eslint-config-tailored-tunes/rules/base'
 	],
 	rules: {}
 };
