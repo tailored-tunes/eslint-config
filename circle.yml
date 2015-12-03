@@ -9,4 +9,4 @@ deployment:
   npm:
     branch: master
     commands:
-      - npm run ./node_modules/.bin/publish
+      - ./node_modules/.bin/publish
