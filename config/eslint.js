@@ -6,25 +6,25 @@ module.exports = function (grunt, options) {
 		base: {
 			options: {
 				configFile: 'rules/base.js',
-				format: 'stylish'
+				format: 'stylish',
 			},
 			files: [
 				{
-					src: options.jsFiles
-				}
-			]
+					src: options.jsFiles,
+				},
+			],
 		},
 		ci: {
 			options: {
 				configFile: 'rules/base.js',
 				format: 'checkstyle',
-				outputFile: '<%= reportsDir %>/jshint-checkstyle.xml'
+				outputFile: '<%= reportsDir %>/jshint-checkstyle.xml',
 			},
 			files: [
 				{
-					src: options.jsFiles
-				}
-			]
-		}
+					src: options.jsFiles,
+				},
+			],
+		},
 	};
 };

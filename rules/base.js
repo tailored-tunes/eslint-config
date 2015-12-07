@@ -3,23 +3,24 @@
 module.exports = {
 	'env': {
 		'browser': true,
-		'node': false
+		'node': true,
+		'es6': true,
 	},
 	'globals': {
 		'require': false,
 		'JSON': false,
 		'module': false,
 		'global': false,
-		'process': false
+		'process': false,
 	},
 	'rules': {
 		'comma-dangle': [
 			2,
-			'never'
+			'always-multiline',
 		],
 		'no-cond-assign': [
 			2,
-			'always'
+			'always',
 		],
 		'no-constant-condition': 2,
 		'no-control-regex': 2,
@@ -47,19 +48,19 @@ module.exports = {
 		'accessor-pairs': 0,
 		'complexity': [
 			2,
-			7
+			7,
 		],
 		'consistent-return': 2,
 		'curly': [
 			2,
-			'all'
+			'all',
 		],
 		'default-case': 2,
 		'dot-notation': 2,
 		'dot-location': 0,
 		'eqeqeq': [
 			2,
-			'smart'
+			'smart',
 		],
 		'guard-for-in': 2,
 		'no-alert': 2,
@@ -106,10 +107,10 @@ module.exports = {
 					'xxx',
 					'lofasz',
 					'anyad',
-					'fuck'
+					'fuck',
 				],
-				'location': 'anywhere'
-			}
+				'location': 'anywhere',
+			},
 		],
 		'no-with': 2,
 		'radix': 2,
@@ -117,15 +118,16 @@ module.exports = {
 		'wrap-iife': 2,
 		'yoda': [
 			2,
-			'never'
+			'never',
 		],
 		'strict': [
 			2,
-			'global'
+			'global',
 		],
 		'no-catch-shadow': 2,
 		'no-delete-var': 2,
 		'no-label-var': 2,
+		'no-var': 2,
 		'no-shadow-restricted-names': 2,
 		'no-shadow': 2,
 		'no-undef-init': 2,
@@ -136,7 +138,7 @@ module.exports = {
 		'handle-callback-err': 2,
 		'no-mixed-requires': [
 			0,
-			true
+			true,
 		],
 		'no-new-require': 2,
 		'no-path-concat': 2,
@@ -147,75 +149,75 @@ module.exports = {
 			2,
 			'1tbs',
 			{
-				'allowSingleLine': false
-			}
+				'allowSingleLine': false,
+			},
 		],
 		'camelcase': [
 			2,
 			{
-				'properties': 'always'
-			}
+				'properties': 'always',
+			},
 		],
 		'comma-spacing': [
 			2,
 			{
 				'before': false,
-				'after': true
-			}
+				'after': true,
+			},
 		],
 		'comma-style': [
 			2,
-			'last'
+			'last',
 		],
 		'consistent-this': [
 			2,
-			'self'
+			'self',
 		],
 		'eol-last': 2,
 		'func-names': 0,
 		'func-style': [
 			2,
-			'expression'
+			'expression',
 		],
 		'indent': [
 			2,
 			'tab',
 			{
-				'SwitchCase': 1
-			}
+				'SwitchCase': 1,
+			},
 		],
 		'key-spacing': [
 			0,
 			{
-				'align': 'value'
-			}
+				'align': 'value',
+			},
 		],
 		'lines-around-comment': [
 			2,
 			{
 				'beforeBlockComment': true,
-				'beforeLineComment': true
-			}
+				'beforeLineComment': true,
+			},
 		],
 		'linebreak-style': [
 			2,
-			'unix'
+			'unix',
 		],
 		'max-nested-callbacks': [
 			2,
-			3
+			3,
 		],
 		'new-cap': [
 			2,
 			{
 				'newIsCap': true,
-				'capIsNew': true
-			}
+				'capIsNew': true,
+			},
 		],
 		'new-parens': 2,
 		'newline-after-var': [
 			2,
-			'always'
+			'always',
 		],
 		'no-array-constructor': 2,
 		'no-continue': 2,
@@ -225,8 +227,8 @@ module.exports = {
 		'no-multiple-empty-lines': [
 			2,
 			{
-				'max': 1
-			}
+				'max': 1,
+			},
 		],
 		'no-nested-ternary': 2,
 		'no-new-object': 2,
@@ -237,86 +239,86 @@ module.exports = {
 		'no-unneeded-ternary': 2,
 		'one-var': [
 			2,
-			'always'
+			'always',
 		],
 		'operator-assignment': [
 			2,
-			'always'
+			'always',
 		],
 		'operator-linebreak': [
 			2,
-			'before'
+			'before',
 		],
 		'padded-blocks': [
 			0,
-			'always'
+			'always',
 		],
 		'quotes': [
 			2,
-			'single'
+			'single',
 		],
 		'semi-spacing': [
 			2,
 			{
 				'before': false,
-				'after': true
-			}
+				'after': true,
+			},
 		],
 		'semi': [
 			2,
-			'always'
+			'always',
 		],
 		'sort-vars': [
 			0,
 			{
-				'ignoreCase': true
-			}
+				'ignoreCase': true,
+			},
 		],
 		'space-after-keywords': [
 			2,
-			'always'
+			'always',
 		],
 		'space-before-blocks': [
 			2,
-			'always'
+			'always',
 		],
 		'space-before-function-paren': [
 			2,
 			{
 				'anonymous': 'always',
-				'named': 'never'
-			}
+				'named': 'never',
+			},
 		],
 		'computed-property-spacing': [
 			2,
-			'never'
+			'never',
 		],
 		'array-bracket-spacing': [
 			2,
-			'never'
+			'never',
 		],
 		'object-curly-spacing': [
 			2,
-			'never'
+			'never',
 		],
 		'space-in-parens': [
 			2,
-			'never'
+			'never',
 		],
 		'space-infix-ops': [
 			2,
 			{
-				'int32Hint': false
-			}
+				'int32Hint': false,
+			},
 		],
 		'space-return-throw-case': 2,
 		'space-unary-ops': [
 			2,
 			{
 				'words': true,
-				'nonwords': false
-			}
+				'nonwords': false,
+			},
 		],
-		'wrap-regex': 2
-	}
+		'wrap-regex': 2,
+	},
 };

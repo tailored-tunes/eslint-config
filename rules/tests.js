@@ -5,6 +5,6 @@ module.exports = {
 	'globals': {
 		'describe': false,
 		'beforeEach': false,
-		'it': false
-	}
+		'it': false,
+	},
 };

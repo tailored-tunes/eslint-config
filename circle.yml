@@ -7,9 +7,6 @@ dependencies:
     - echo "//registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN" > ~/.npmrc
   post:
     - npm run check-updates
-test:
-  override:
-    - npm run lint
 deployment:
   npm:
     branch: master
