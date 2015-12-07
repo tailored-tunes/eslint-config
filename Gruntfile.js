@@ -1,10 +1,10 @@
 'use strict';
 
-let path = require('path');
+const path = require('path');
 
 module.exports = function (grunt) {
 
-	let options = {
+	const options = {
 			configDir: path.resolve('./config'),
 			jsFiles: [
 				'Gruntfile.js',

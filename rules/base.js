@@ -320,5 +320,6 @@ module.exports = {
 			},
 		],
 		'wrap-regex': 2,
+		'prefer-const':2,
 	},
 };
