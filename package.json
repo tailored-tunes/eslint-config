@@ -23,9 +23,6 @@
     "url": "https://github.com/tailored-tunes/eslint-config/issues"
   },
   "homepage": "https://github.com/tailored-tunes/eslint-config#readme",
-  "peerDependencies": {
-    "eslint": "^1.10.*"
-  },
   "devDependencies": {
     "eslint": "^1.10.3",
     "grunt": "^0.4.5",
