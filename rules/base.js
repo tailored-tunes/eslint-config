@@ -67,7 +67,6 @@ module.exports = {
 		'no-caller': 2,
 		'no-div-regex': 2,
 		'no-else-return': 2,
-		'no-empty-label': 2,
 		'no-eq-null': 2,
 		'no-eval': 2,
 		'no-extend-native': 2,
@@ -274,9 +273,13 @@ module.exports = {
 				'ignoreCase': true,
 			},
 		],
-		'space-after-keywords': [
+		'keyword-spacing': [
 			2,
-			'always',
+			{
+				'before': true,
+				'after': true,
+				'overrides': {},
+			},
 		],
 		'space-before-blocks': [
 			2,
@@ -311,7 +314,6 @@ module.exports = {
 				'int32Hint': false,
 			},
 		],
-		'space-return-throw-case': 2,
 		'space-unary-ops': [
 			2,
 			{
