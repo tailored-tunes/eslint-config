@@ -1,6 +1,6 @@
 'use strict';
 
 module.exports = {
-	extends: ['eslint-config-tailored-tunes/rules/base'],
-	rules: {},
+  extends: ['eslint-config-tailored-tunes/rules/base'],
+  rules: {}
 };
