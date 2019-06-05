@@ -5,8 +5,6 @@ machine:
 dependencies:
   pre:
     - echo "//registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN" > ~/.npmrc
-  post:
-    - npm run check-updates
 deployment:
   npm:
     branch: master
