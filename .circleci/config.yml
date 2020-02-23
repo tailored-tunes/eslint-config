@@ -1,6 +1,8 @@
 version: 2.1
 jobs:
   deploy:
+    docker:
+      - image: node:latest
     filters:
       branches:
         only: master
