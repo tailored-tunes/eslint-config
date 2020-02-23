@@ -1,18 +1,6 @@
 'use strict';
 
 module.exports = {
-  'env': {
-    'browser': true,
-    'node': true,
-    'es6': true
-  },
-  'globals': {
-    'require': false,
-    'JSON': false,
-    'module': false,
-    'global': false,
-    'process': false
-  },
   'rules': {
     'accessor-pairs': 'off',
     'array-bracket-spacing': [
