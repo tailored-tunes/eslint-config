@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-tailored-tunes",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "Eslint configuration files for the Tailored Tunes universe",
   "main": "index.js",
   "repository": {
@@ -37,5 +37,11 @@
     "set-value": "^3.0.1",
     "tunnel-agent": "^0.6.0",
     "yarn": "^1.22.0"
+  },
+  "peerDependencies": {
+		"eslint": "^6.8.0",
+    "@typescript-eslint/eslint-plugin": "^2.20.0",
+    "@typescript-eslint/parser": "^2.20.0",
+    "typescript": "^3.8.2"
   }
 }
