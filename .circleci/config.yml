@@ -14,4 +14,4 @@ jobs:
           command: 'echo "//registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN" > ~/.npmrc'
       - run:
           name: publish
-          command './node_modules/.bin/publish'
+          command: './node_modules/.bin/publish'
