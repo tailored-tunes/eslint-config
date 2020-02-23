@@ -1,3 +1,17 @@
-{
-  "message" : "Permission denied"
-}
+version: 2.1
+jobs:
+  deploy:
+    filters:
+      branches:
+        only: master
+    steps: # a collection of executable commands
+      - checkout # special step to check out source code to working directory
+      - run:
+          name: install deps
+          command: 'yarn'
+      - run:
+          name: set up npm
+          command: 'echo "//registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN" > ~/.npmrc'
+      - run:
+          name: publish
+          command './node_modules/.bin/publish'
