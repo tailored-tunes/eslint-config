@@ -10,10 +10,13 @@ jobs:
           command: 'yarn'
       - run:
           name: set up npm
-          command: 'echo "//registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN" > ~/.npmrc'
+          command: echo "//registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}" > ~/.npmrc
       - run:
           name: publish
-          command: './node_modules/.bin/publish'
+          command: ./node_modules/.bin/publish
+      - store_artifacts:
+          path: ~/.npmrc
+          destination: artifact-file
 workflows:
   deploy:
     jobs:
