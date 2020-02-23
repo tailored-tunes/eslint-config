@@ -3,9 +3,6 @@ jobs:
   deploy:
     docker:
       - image: node:latest
-    filters:
-      branches:
-        only: master
     steps: # a collection of executable commands
       - checkout # special step to check out source code to working directory
       - run:
@@ -17,3 +14,10 @@ jobs:
       - run:
           name: publish
           command: './node_modules/.bin/publish'
+workflows:
+  deploy:
+    jobs:
+      - deploy:
+        filters:
+          branches:
+            only: master
