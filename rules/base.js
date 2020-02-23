@@ -108,10 +108,12 @@ module.exports = {
       'unix'
     ],
     'lines-around-comment': 'off',
+    'max-len': ['error', { code: 200 }],
     'max-nested-callbacks': [
       'error',
       3
     ],
+    'multiline-ternary': ['error', 'never'],
     'new-cap': [
       'error',
       {
@@ -129,7 +131,7 @@ module.exports = {
       'error',
       'always'
     ],
-    'no-console': 'error',
+    'no-console': 'warn',
     'no-constant-condition': 'error',
     'no-continue': 'error',
     'no-control-regex': 'error',
@@ -192,6 +194,7 @@ module.exports = {
     'no-process-env': 0,
     'no-process-exit': 2,
     'no-proto': 2,
+    'no-prototype-builtins': 2,
     'no-redeclare': 2,
     'no-regex-spaces': 2,
     'no-restricted-modules': 0,
@@ -204,7 +207,7 @@ module.exports = {
     'no-spaced-func': 2,
     'no-sparse-arrays': 2,
     'no-sync': 2,
-    'no-ternary': 2,
+    'no-ternary': 0,
     'no-throw-literal': 2,
     'no-trailing-spaces': 2,
     'no-undef': 2,
@@ -233,8 +236,9 @@ module.exports = {
     'no-with': 2,
     'object-curly-spacing': [
       2,
-      'never'
+      'always'
     ],
+    'object-shorthand': ['error', 'never'],
     'one-var': 'off',
     'operator-assignment': [
       2,
@@ -248,6 +252,7 @@ module.exports = {
       0,
       'always'
     ],
+    'prefer-arrow-callback': 2,
     'prefer-const': 2,
     'quotes': [
       2,
@@ -265,6 +270,8 @@ module.exports = {
         'before': false
       }
     ],
+    'sort-imports': 0,
+    'sort-keys': 0,
     'sort-vars': [
       0,
       {
