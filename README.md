@@ -2,7 +2,7 @@
 
 The global Eslint configuration for all Tailored Tunes JS projects.
 
-## Installation
+## Installation
 
 ### Yarn (preferred)
 `yarn add -D eslint-config-tailored-tunes`
